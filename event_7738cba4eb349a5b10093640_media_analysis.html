@@ -1,0 +1,381 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>事件7738cba4eb349a5b10093640 - 媒体来源分析报告</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            body {font-family: 'Microsoft YaHei', Arial, sans-serif; background-color: #f5f7fa; padding: 20px;}
+            .container {max-width: 1400px; margin: 0 auto; background: white; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); padding: 30px;}
+            .header {text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee;}
+            .header h1 {color: #3498db; margin-bottom: 10px; font-size: 24px;}
+            .header .meta {color: #7f8c8d; font-size: 14px;}
+
+            .control-section {
+                background-color: #e8f4fc;
+                border-radius: 8px;
+                padding: 15px 20px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            .control-section label {
+                color: #2980b9;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .control-section select {
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+                min-width: 100px;
+                cursor: pointer;
+            }
+            .control-section .tip {
+                color: #7f8c8d;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            .stats-section {background-color: #f8f9fa; border-radius: 8px; padding: 20px; margin-bottom: 30px;}
+            .stats-section h2 {color: #3498db; margin-bottom: 15px; font-size: 18px;}
+            .stats-table {width: 100%; border-collapse: collapse;}
+            .stats-table th, .stats-table td {padding: 12px 15px; text-align: left; border-bottom: 1px solid #e1e4e8;}
+            .stats-table th {background-color: #e8f4fc; color: #2980b9; font-weight: bold;}
+            .link-cell {word-break: break-all; font-size: 13px;}
+            .link-cell a {color: #3498db; text-decoration: none;}
+            .link-cell a:hover {text-decoration: underline;}
+
+            .chart-section {text-align: center; margin-bottom: 30px;}
+            .chart-section h2 {color: #3498db; margin-bottom: 20px; font-size: 18px;}
+            /* 增大图表容器高度，解决Y轴显示不全问题 */
+            .chart-container {
+                position: relative;
+                min-height: 800px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .footer {text-align: center; color: #95a5a6; font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>媒体来源占比分析报告</h1>
+                <div class="meta">事件ID: 7738cba4eb349a5b10093640 | 生成时间: 2026-03-27 18:40:32</div>
+            </div>
+
+            <div class="control-section">
+                <label for="mediaCountSelect">展示媒体数量：</label>
+                <select id="mediaCountSelect">
+                    
+                        <option value="0" >0个</option>
+                    
+                        <option value="1" >1个</option>
+                    
+                        <option value="2" >2个</option>
+                    
+                        <option value="3" >3个</option>
+                    
+                        <option value="4" >4个</option>
+                    
+                        <option value="5" >5个</option>
+                    
+                        <option value="6" >6个</option>
+                    
+                        <option value="7" >7个</option>
+                    
+                        <option value="8" >8个</option>
+                    
+                        <option value="9" >9个</option>
+                    
+                        <option value="10" >10个</option>
+                    
+                        <option value="11" >11个</option>
+                    
+                        <option value="12" >12个</option>
+                    
+                        <option value="13" >13个</option>
+                    
+                        <option value="14" >14个</option>
+                    
+                        <option value="15" >15个</option>
+                    
+                        <option value="16" >16个</option>
+                    
+                        <option value="17" >17个</option>
+                    
+                        <option value="18" >18个</option>
+                    
+                        <option value="19" >19个</option>
+                    
+                        <option value="20" selected>20个</option>
+                    
+                        <option value="21" >21个</option>
+                    
+                        <option value="22" >22个</option>
+                    
+                        <option value="23" >23个</option>
+                    
+                        <option value="24" >24个</option>
+                    
+                        <option value="25" >25个</option>
+                    
+                        <option value="26" >26个</option>
+                    
+                        <option value="27" >27个</option>
+                    
+                        <option value="28" >28个</option>
+                    
+                        <option value="29" >29个</option>
+                    
+                        <option value="30" >30个</option>
+                    
+                        <option value="31" >31个</option>
+                    
+                        <option value="32" >32个</option>
+                    
+                        <option value="33" >33个</option>
+                    
+                        <option value="34" >34个</option>
+                    
+                        <option value="35" >35个</option>
+                    
+                        <option value="36" >36个</option>
+                    
+                        <option value="37" >37个</option>
+                    
+                        <option value="38" >38个</option>
+                    
+                        <option value="39" >39个</option>
+                    
+                        <option value="40" >40个</option>
+                    
+                        <option value="41" >41个</option>
+                    
+                        <option value="42" >42个</option>
+                    
+                        <option value="43" >43个</option>
+                    
+                        <option value="44" >44个</option>
+                    
+                        <option value="45" >45个</option>
+                    
+                        <option value="46" >46个</option>
+                    
+                        <option value="47" >47个</option>
+                    
+                        <option value="48" >48个</option>
+                    
+                        <option value="49" >49个</option>
+                    
+                        <option value="50" >50个</option>
+                    
+                </select>
+                <span class="tip">（0表示仅显示"其他媒体"汇总，最多显示50个）</span>
+            </div>
+
+            <div class="stats-section">
+                <h2>基础统计信息</h2>
+                <table class="stats-table">
+                    <tr>
+                        <th>统计项目</th>
+                        <th>数值</th>
+                    </tr>
+                    <tr>
+                        <td>总媒体报道数量</td>
+                        <td>87</td>
+                    </tr>
+                    <tr>
+                        <td>不同媒体来源个数</td>
+                        <td>64</td>
+                    </tr>
+                    <tr>
+                        <td>原帖链接</td>
+                        <td class="link-cell"><a href="https://ef.zhiweidata.com/event/7738cba4eb349a5b10093640/profileV2" target="_blank">https://ef.zhiweidata.com/event/7738cba4eb349a5b10093640/profileV2</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="chart-section">
+                <h2>媒体来源占比柱状图</h2>
+                <div class="chart-container">
+                    <canvas id="mediaChart" style="width:100%; height:800px;"></canvas>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2024 媒体分析工具 | 支持自定义展示0-50个媒体来源</p>
+            </div>
+        </div>
+
+        <script>
+            const mediaData = [{"name":"\u65b0\u6d6a\u7f51","count":7},{"name":"\u521b\u4e1a\u90a6","count":4},{"name":"i\u9ed1\u9a6c","count":4},{"name":"\u5934\u90e8\u8d22\u7ecf","count":3},{"name":"\u5bcc\u9014\u725b\u725b","count":3},{"name":"\u5357\u90fd\u5468\u520a","count":3},{"name":"IB\u8d44\u8baf","count":2},{"name":"DoNews","count":2},{"name":"C114\u901a\u4fe1\u7f51","count":2},{"name":"\u65b0\u6d6a\u79d1\u6280","count":2},{"name":"\u5357\u65b9\u90fd\u5e02\u62a5","count":2},{"name":"ZAKER\u79d1\u6280","count":1},{"name":"\u65b0\u9ec4\u6cb3","count":1},{"name":"\u624b\u673a\u65b0\u6d6a\u7f51","count":1},{"name":"\u548c\u8baf\u7f51","count":1},{"name":"21IC\u7535\u5b50\u7f51","count":1},{"name":"\u79d1\u6280\u730e","count":1},{"name":"\u949b\u5a92\u4f53","count":1},{"name":"\u7231\u8fd0\u8425","count":1},{"name":"\u5929\u773c\u8d44\u8baf","count":1},{"name":"\u793e\u4f1a\u6d1e\u5bdf\u541b","count":1},{"name":"\u4e1c\u65b9\u8bc1\u5238","count":1},{"name":"\u5929\u5929IC","count":1},{"name":"\u4f01\u67e5\u67e5","count":1},{"name":"\u8d75\u6708","count":1},{"name":"\u5927\u5382\u5185\u7ebf\u901f\u62a5","count":1},{"name":"MCA\u624b\u673a\u8054\u76df","count":1},{"name":"\u6211\u7231\u65b9\u6848\u7f51","count":1},{"name":"\u521b\u4e1a\u5bb6","count":1},{"name":"\u82af\u667a\u8baf","count":1},{"name":"\u4e00\u8d77\u8d70\u8fc7\u7f8e\u597d\u7684\u65f6\u5149","count":1},{"name":"\u5382\u5185\u5bc6\u63a2","count":1},{"name":"\u534a\u5bfc\u4f53\u884c\u4e1a\u8054\u76df","count":1},{"name":"\u537f\u5b50\u4e66","count":1},{"name":"\u95f2\u8bf4\u65e5\u5e38","count":1},{"name":"\u65f6\u4e8b\u5609\u5609\u8c08","count":1},{"name":"\u4e2d\u7535\u7f51","count":1},{"name":"\u5546\u4e1a\u65b0\u77e5","count":1},{"name":"\u4e09\u8a00Pro","count":1},{"name":"\u7efc\u5408\u8d44\u8baf\u805a\u7126","count":1},{"name":"\u4e09\u8a00\u79d1\u6280","count":1},{"name":"\u4e2d\u8d22\u7f51","count":1},{"name":"\u7231\u80a1\u7968","count":1},{"name":"BiaNews\u97ad\u725b\u58eb","count":1},{"name":"\u97ad\u725b\u58eb","count":1},{"name":"\u4e1c\u65b9\u8d22\u5bcc\u7f51","count":1},{"name":"\u5357\u90fdN\u89c6\u9891APP \u00b7 \u5546\u4e1a\u6d88\u8d39","count":1},{"name":"\u5965\u4e00\u7f51","count":1},{"name":"\u84dd\u79d1\u6280","count":1},{"name":"\u6781\u5ba2\u7f51","count":1},{"name":"\u4e2d\u534e\u7f51","count":1},{"name":"TOM\u7f51","count":1},{"name":"\u7535\u5b50\u6280\u672f\u5e94\u7528","count":1},{"name":"\u7269\u8054\u7f51\u4e16\u754c","count":1},{"name":"LONGBRIDGE","count":1},{"name":"\u65b0\u6d6a\u8d22\u7ecf","count":1},{"name":"\u65b0\u6d6a\u8d22\u7ecf\u5934\u6761","count":1},{"name":"\u949b\u5a92\u4f53APP","count":1},{"name":"\u8d22\u7ecf\u4e2d\u56fd","count":1},{"name":"\u592a\u5e73\u6d0b\u7535\u8111\u7f51","count":1},{"name":"\u6570\u667a\u7814\u7a76\u793e","count":1},{"name":"\u641c\u72d0\u79d1\u6280","count":1},{"name":"PChome","count":1},{"name":"\u804c\u573a\u8ba4\u77e5","count":1}];
+            const eventId = "7738cba4eb349a5b10093640";
+            const totalReports = 87;
+            const uniqueMedia = 64;
+            let chartInstance = null;
+
+            // 优化配色：更柔和的渐变配色
+            const colorPalette = [
+                '#ffce56', '#8dd3c7', '#bebada', '#fb8072', '#80b1d3',
+                '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd',
+                '#ccebc5', '#ffed6f', '#a6cee3', '#1f78b4', '#b2df8a',
+                '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00',
+                '#cab2d6', '#6a3d9a', '#ffff99', '#b15928', '#8dd3c7',
+                '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69',
+                '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f',
+                '#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99',
+                '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a',
+                '#ffff99', '#b15928'
+            ];
+
+            function initChart(topN) {
+                const ctx = document.getElementById('mediaChart').getContext('2d');
+                if (chartInstance) chartInstance.destroy();
+
+                let labels = [];
+                let data = [];
+
+                if (topN === 0) {
+                    labels = ['其他媒体（共' + uniqueMedia + '家）'];
+                    data = [totalReports];
+                } else {
+                    const topMedia = mediaData.slice(0, topN);
+                    topMedia.forEach(item => {
+                        labels.push(item.name);
+                        data.push(item.count);
+                    });
+                    const otherMedia = mediaData.slice(topN);
+                    if (otherMedia.length > 0) {
+                        const otherCount = otherMedia.reduce((sum, item) => sum + item.count, 0);
+                        labels.push('其他媒体（共' + otherMedia.length + '家）');
+                        data.push(otherCount);
+                    }
+                }
+
+                const percentages = data.map(c => ((c / totalReports) * 100).toFixed(2));
+
+                chartInstance = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels.reverse(), // 保持和原图表一致的顺序
+                        datasets: [{
+                            label: '报道占比 (%)',
+                            data: percentages.reverse(),
+                            backgroundColor: colorPalette.slice(0, labels.length),
+                            borderColor: 'white',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y', // 横向柱状图
+                        maintainAspectRatio: false, // 允许自定义高度
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: '事件ID: ' + eventId + '  媒体来源占比分析 (总报道: ' + totalReports + '篇, 不同媒体来源个数: ' + uniqueMedia + '家)',
+                                font: { size: 16, weight: 'normal' },
+                                padding: { top: 10, bottom: 20 }
+                            },
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.raw + '%';
+                                    }
+                                }
+                            },
+                            // 在柱子右侧标注百分比
+                            datalabels: {
+                                color: '#333',
+                                anchor: 'end',
+                                align: 'start',
+                                formatter: function(value) {
+                                    return value + '%';
+                                },
+                                font: { size: 11 }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                max: 100,
+                                title: { display: true, text: '占比 (%)', font: { size: 13 } },
+                                ticks: { font: { size: 11 } }
+                            },
+                            y: {
+                                title: { display: false },
+                                ticks: { font: { size: 11 } }
+                            }
+                        },
+                        layout: {
+                            padding: { left: 20, right: 40, top: 20, bottom: 20 }
+                        }
+                    },
+                    plugins: [{
+                        beforeInit: function(chart) {
+                            // 注册 datalabels 插件
+                            if (!Chart.registry.plugins.get('datalabels')) {
+                                Chart.register({
+                                    id: 'datalabels',
+                                    afterDatasetsDraw: function(chart) {
+                                        const ctx = chart.ctx;
+                                        chart.data.datasets.forEach((dataset, datasetIndex) => {
+                                            const meta = chart.getDatasetMeta(datasetIndex);
+                                            meta.data.forEach((bar, index) => {
+                                                const data = dataset.data[index];
+                                                ctx.save();
+                                                ctx.fillStyle = '#333';
+                                                ctx.font = '11px Microsoft YaHei';
+                                                ctx.textAlign = 'left';
+                                                ctx.textBaseline = 'middle';
+                                                const x = bar.x + 5;
+                                                const y = bar.y;
+                                                ctx.fillText(data + '%', x, y);
+                                                ctx.restore();
+                                            });
+                                        });
+                                    }
+                                });
+                            }
+                        }
+                    }]
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const defaultTopN = 20;
+                initChart(defaultTopN);
+            });
+
+            document.getElementById('mediaCountSelect').addEventListener('change', function() {
+                initChart(parseInt(this.value));
+            });
+
+            document.addEventListener('keydown', function(e) {
+                const select = document.getElementById('mediaCountSelect');
+                if (e.key === 'ArrowUp' && parseInt(select.value) < 50) {
+                    select.value = parseInt(select.value) + 1;
+                    initChart(parseInt(select.value));
+                } else if (e.key === 'ArrowDown' && parseInt(select.value) > 0) {
+                    select.value = parseInt(select.value) - 1;
+                    initChart(parseInt(select.value));
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
